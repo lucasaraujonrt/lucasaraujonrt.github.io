@@ -8,6 +8,16 @@ export const Container = styled.div`
   flex-direction: column;
 `;
 
+export const ContainerWip = styled.div`
+  display: flex;
+  background-color: ${({ theme }) => theme.colors.white};
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const WrapperTitleAboutMe = styled.div`
   width: 100%;
   display: flex;

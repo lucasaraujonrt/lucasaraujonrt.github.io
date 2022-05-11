@@ -1,11 +1,9 @@
 import React from "react";
 import styled, { createGlobalStyle } from "styled-components";
 import { Controller, Scene } from "react-scrollmagic";
-// @ts-ignore
-import AnimatedCursor from "react-animated-cursor";
-import "./App.css";
 import Introduction from "./view/Introduction/Introduction";
 import AboutMe from "./view/AboutMe/AboutMe";
+import Timeline from "./view/Timeline/Timeline";
 
 export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
@@ -32,26 +30,26 @@ const SectionWipesStyled = styled.div`
 const App = () => {
   return (
     <>
-      <SectionWipesStyled>
-        <Controller globalSceneOptions={{ triggerHook: "onLeave" }}>
-          <GlobalStyle />
-          <Scene pin>
-            <div className="panel">
-              <Introduction />
-            </div>
-          </Scene>
-          <Scene pin>
-            <div className="panel">
-              <AboutMe />
-            </div>
-          </Scene>
-          <Scene pin>
-            <div className="panel">
-              <Introduction />
-            </div>
-          </Scene>
-        </Controller>
-      </SectionWipesStyled>
+      {/* <SectionWipesStyled> */}
+      {/* <Controller globalSceneOptions={{ triggerHook: "onLeave" }}> */}
+      <GlobalStyle />
+      {/* <Scene pin> */}
+      <div className="panel">
+        <Introduction />
+      </div>
+      {/* </Scene> */}
+      {/* <Scene pin> */}
+      <div className="panel">
+        <AboutMe />
+      </div>
+      {/* </Scene> */}
+      {/* <Scene pin> */}
+      {/* <div className="panel"> */}
+      <Timeline />
+      {/* </div> */}
+      {/* </Scene> */}
+      {/* </Controller> */}
+      {/* </SectionWipesStyled> */}
     </>
   );
 };
