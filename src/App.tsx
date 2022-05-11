@@ -1,6 +1,7 @@
 import React from "react";
-import styled, { createGlobalStyle } from "styled-components";
-import { Controller, Scene } from "react-scrollmagic";
+// import styled, { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components";
+// import { Controller, Scene } from "react-scrollmagic";
 import Introduction from "./view/Introduction/Introduction";
 import AboutMe from "./view/AboutMe/AboutMe";
 import Timeline from "./view/Timeline/Timeline";
@@ -18,16 +19,16 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const SectionWipesStyled = styled.div`
-  overflow: hidden;
+// const SectionWipesStyled = styled.div`
+//   overflow: hidden;
 
-  .panel {
-    height: 100vh;
-    width: 100vw;
-  }
-`;
+//   .panel {
+//     height: 100vh;
+//     width: 100vw;
+//   }
+// `;
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <>
       {/* <SectionWipesStyled> */}
