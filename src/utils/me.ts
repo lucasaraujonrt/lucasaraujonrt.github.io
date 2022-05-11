@@ -40,3 +40,12 @@ export const icons = [
     currentLink: "https://www.npmjs.com/~lucasaraujonrt",
   },
 ];
+
+export const timeline = {
+  second: [
+    "Intern Mentor",
+    "Speaker on technology",
+    "Release applications to the Apple and Google Play stores.",
+    "Use of agile methodologies and tools like Jira, Bitbucket and Trello",
+  ],
+};

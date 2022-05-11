@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   background-color: ${({ theme }) => theme.colors.background};
-  height: 95vh;
+  height: 100vh;
   width: 100vw;
   flex-direction: column;
 `;
@@ -68,22 +68,22 @@ export const IndicatorToScroll = styled.div`
       transform: translateY(-50%);
     }
   }
-  
-::before {
-  animation: bounce 1s ease infinite;
-  animation-delay: 2s;
-  bottom: 2rem;
-  color: #fff;
-  content: '╲╱';
-  font-size: 1.5rem;
-  height: 4rem;
-  left: 50%;
-  letter-spacing: -1px;
-  line-height: 4rem;
-  margin-left: -3rem;
-  opacity: 0.8;
-  position: absolute;
-  text-align: center;
-  width: 6rem;
-}
+
+  ::before {
+    animation: bounce 1s ease infinite;
+    animation-delay: 2s;
+    bottom: 2rem;
+    color: #fff;
+    content: "╲╱";
+    font-size: 1.5rem;
+    height: 4rem;
+    left: 50%;
+    letter-spacing: -1px;
+    line-height: 4rem;
+    margin-left: -3rem;
+    opacity: 0.8;
+    position: absolute;
+    text-align: center;
+    width: 6rem;
+  }
 `;
