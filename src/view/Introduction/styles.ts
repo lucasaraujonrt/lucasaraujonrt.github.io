@@ -85,5 +85,6 @@ export const IndicatorToScroll = styled.div`
     position: absolute;
     text-align: center;
     width: 6rem;
+    cursor: pointer;
   }
 `;

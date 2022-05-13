@@ -7,7 +7,11 @@ import { Typography } from "../../components";
 
 import * as S from "./styles";
 
-const Introduction: React.FC = () => {
+interface IIntroductionProps {
+  onClickArrow: () => void;
+}
+
+const Introduction = ({ onClickArrow }: IIntroductionProps) => {
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -112,7 +116,7 @@ const Introduction: React.FC = () => {
           />
         </S.WrapperAnimation>
       </S.AboutMeContainer>
-      <S.IndicatorToScroll />
+      <S.IndicatorToScroll onClick={onClickArrow} />
     </S.Container>
   );
 };
